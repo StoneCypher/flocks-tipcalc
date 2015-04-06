@@ -57,3 +57,13 @@ html, body {
 label {
   display : block;
 }
+
+#result {
+  font-size   : 300%;
+  font-weight : bold;
+  text-align  : center;
+}
+
+#howHappy input:focus             { background-color: #e0ffe0; }
+#howHappy input+input:focus       { background-color: #ffffe0; }
+#howHappy input+input+input:focus { background-color: #ffe0e0; }

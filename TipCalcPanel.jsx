@@ -1,10 +1,20 @@
 
 var TipCalcPanel = flocks.createClass({
 
+  fmt: function(Tip) {
+    return ((this.fctx.bill || 0) * Tip).toFixed(2);
+  },
+
+  setTotal: function(Becomes) {
+    var fset = this.fset,
+        fmt  = this.fmt;
+    return function() { fset('total', fmt(Becomes)); };
+  },
+
   update: function() {
     var NewBill = parseFloat(document.getElementById('billAmount').value);
     this.fset('bill', NewBill);
-    this.fset('total', NewBill); // TEMPORARY AND WRONG
+    this.fset('total', '');
   },
 
   render: function() {
@@ -18,9 +28,9 @@ var TipCalcPanel = flocks.createClass({
         </label>
 
         <div id="howHappy">
-          <input type="button" value={"25%"}/>
-          <input type="button" value={"20%"}/>
-          <input type="button" value={"15%"}/>
+          <input type="button" value={"25%"} onClick={this.setTotal(1.25)}/>
+          <input type="button" value={"20%"} onClick={this.setTotal(1.20)}/>
+          <input type="button" value={"15%"} onClick={this.setTotal(1.15)}/>
         </div>
 
         <div id="result">

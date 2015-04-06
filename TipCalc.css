@@ -19,3 +19,25 @@ html, body {
 #layout td {
   vertical-align : middle;
 }
+
+#panel {
+  width      : 30em;
+  margin     : 0 auto;
+  text-align : left;
+}
+
+#howHappy {
+  margin : 4em 0;
+  width  : 30em;
+}
+
+#howHappy input {
+  font-size        : 300%;
+  width            : 100%;
+  background-color : #f0f0f0;
+  border           : thin solid gray;
+}
+
+#howHappy input+input {
+  margin-top : 0.5em;
+}

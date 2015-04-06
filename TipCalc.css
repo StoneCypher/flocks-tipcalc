@@ -41,3 +41,19 @@ html, body {
 #howHappy input+input {
   margin-top : 0.5em;
 }
+
+#amt {
+  font-size: 300%;
+}
+
+#amt input {
+  font-size           : 100%;
+  width               : 4em;
+  border              : 0 solid gray;
+  border-bottom-width : thin;
+  padding-left        : 0.2em;
+}
+
+label {
+  display : block;
+}

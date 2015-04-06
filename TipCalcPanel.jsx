@@ -28,9 +28,9 @@ var TipCalcPanel = flocks.createClass({
         </label>
 
         <div id="howHappy">
-          <input type="button" value={"25%"} onClick={this.setTotal(1.25)}/>
-          <input type="button" value={"20%"} onClick={this.setTotal(1.20)}/>
-          <input type="button" value={"15%"} onClick={this.setTotal(1.15)}/>
+          <input type="button" value={"😁 25% = $" + this.fmt(0.25)} onClick={this.setTotal(1.25)}/>
+          <input type="button" value={"😑 20% = $" + this.fmt(0.20)} onClick={this.setTotal(1.20)}/>
+          <input type="button" value={"😦 15% = $" + this.fmt(0.15)} onClick={this.setTotal(1.15)}/>
         </div>
 
         <div id="result">

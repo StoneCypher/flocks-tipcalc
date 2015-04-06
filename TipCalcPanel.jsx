@@ -18,7 +18,7 @@ var TipCalcPanel = flocks.createClass({
         </div>
 
         <div id="result">
-          Total: $
+          Total: ${this.fctx.total}
         </div>
 
       </div>
